@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using SevenSeas.Utilities.Application.Responses.Interfaces;
+﻿using SevenSeas.Utilities.Application.Responses.Interfaces;
 
 namespace SevenSeas.Utilities.Application.Responses;
 
