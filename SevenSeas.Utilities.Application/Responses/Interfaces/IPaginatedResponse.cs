@@ -12,23 +12,29 @@ namespace SevenSeas.Utilities.Application.Responses.Interfaces;
 public interface IPaginatedResponse
 {
     /// <summary>
-    /// Gets the total number of pages in the paginated response.
+    /// The total number of pages in the paginated response.
     /// </summary>
+
     [JsonProperty("totalPages")]
     uint TotalPages { get; init; }
 
     /// <summary>
-    /// Gets or initializes the page number in the paginated response.
+    /// Number of records in each page.
     /// </summary>
+
     [JsonProperty("pageSize")]
     uint PageSize { get; init; }
 
     /// <summary>
-    /// Gets or initializes the total number of records in the paginated
-    /// response.
+    /// The page number.
     /// </summary>
+
     [JsonProperty("page")]
     uint Page { get; init; }
+
+    /// <summary>
+    /// The total number of records in all pages.
+    /// </summary>
 
     [JsonProperty("totalRecords")]
     uint TotalRecords { get; init; }

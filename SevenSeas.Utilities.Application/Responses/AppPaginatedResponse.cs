@@ -1,23 +1,16 @@
 ﻿using Newtonsoft.Json;
+using SevenSeas.Utilities.Application.Responses.Interfaces;
 
-namespace SevenSeas.Utilities.Application.Responses.Interfaces;
+namespace SevenSeas.Utilities.Application.Responses;
 
 public class AppPaginatedResponse<TData> :
     AppResponse<TData>,
     IPaginatedResponse
 {
     # region ---- Properties ---------------------------------------------------
-
-    [JsonProperty("totalPages")]
     public uint TotalPages { get; init; }
-
-    [JsonProperty("pageSize")]
     public uint PageSize { get; init; }
-
-    [JsonProperty("page")]
     public uint Page { get; init; }
-
-    [JsonProperty("totalRecords")]
     public uint TotalRecords { get; init; }
 
     # endregion
