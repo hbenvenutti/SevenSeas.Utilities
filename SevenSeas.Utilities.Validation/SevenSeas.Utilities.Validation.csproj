@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>0.1.0</Version>
+        <Title>Seven Seas Utilities Validation</Title>
+        <PackageIcon>logo.png</PackageIcon>
+        <Authors>Huam Benvenutti</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DocumentationFile>bin\Release\SevenSeas.Utilities.Extensions.xml</DocumentationFile>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <NoWarn>1701;1702;1591</NoWarn>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../LICENSE" Pack="true" PackagePath="/"/>
+        <None Include="./README.md" Pack="true" PackagePath="/"/>
+        <None Include="..\logo.png">
+            <Pack>True</Pack>
+            <PackagePath>/</PackagePath>
+            <Link>logo.png</Link>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SevenSeas.Utilities.Application\SevenSeas.Utilities.Application.csproj" />
+      <ProjectReference Include="..\SevenSeas.Utilities.ValueTypes\SevenSeas.Utilities.ValueTypes.csproj" />
+    </ItemGroup>
+
+</Project>
