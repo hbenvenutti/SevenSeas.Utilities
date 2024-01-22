@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-        <DocumentationFile>bin\Release\SevenSeas.Utilities.Extensions.xml</DocumentationFile>
+        <DocumentationFile>bin\Release\SevenSeas.Utilities.Validation.xml</DocumentationFile>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <NoWarn>1701;1702;1591</NoWarn>
     </PropertyGroup>
