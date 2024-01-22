@@ -9,6 +9,8 @@
         <Title>Seven Seas Utilities Value Types</Title>
         <Authors>Huam Benvenutti</Authors>
         <PackageIcon>logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

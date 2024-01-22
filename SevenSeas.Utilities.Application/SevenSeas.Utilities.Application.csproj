@@ -9,16 +9,19 @@
         <PackageIcon>logo.png</PackageIcon>
         <Title>Seven Seas Utilities Application</Title>
         <Authors>Huam Benvenutti</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
       <DocumentationFile>bin\Release\SevenSeas.Utilities.Application.xml</DocumentationFile>
       <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <NoWarn>1701;1702;1591</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="../LICENSE" Pack="true" PackagePath=""/>
-        <None Include="./README.md" Pack="true" PackagePath=""/>
+        <None Include="../LICENSE" Pack="true" PackagePath="/"/>
+        <None Include="./README.md" Pack="true" PackagePath="/"/>
         <None Include="..\logo.png">
             <Pack>True</Pack>
             <PackagePath>/</PackagePath>

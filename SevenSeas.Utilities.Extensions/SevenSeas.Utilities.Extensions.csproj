@@ -9,6 +9,8 @@
         <Title>Seven Seas Utilities Extensions</Title>
         <PackageIcon>logo.png</PackageIcon>
         <Authors>Huam Benvenutti</Authors>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
