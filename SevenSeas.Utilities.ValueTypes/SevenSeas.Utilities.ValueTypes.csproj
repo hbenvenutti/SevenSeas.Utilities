@@ -26,4 +26,8 @@
       </None>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SevenSeas.Utilities.Extensions\SevenSeas.Utilities.Extensions.csproj" />
+    </ItemGroup>
+
 </Project>
