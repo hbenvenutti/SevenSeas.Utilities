@@ -35,10 +35,10 @@ public readonly struct Cpf :
     public string Mask => CpfRegex.Mask(_value);
 
     /// <summary>Gets the digits of the CPF.</summary>
-    public string Digits => _value[..9];
+    public string Digits => _value[9..];
 
     ///<inheritdoc/>
-    public string SecurityMask => CpfRegex.SecurityMask(Mask);
+    public string SecurityMask => CpfRegex.SecurityMask(_value);
 
     # endregion
 
@@ -130,27 +130,20 @@ public readonly struct Cpf :
     {
         var random = new Random();
 
-        var numbers = new byte[9];
+        var cpf = new byte[9];
 
-        for (var i = 0; i < numbers.Length; i++)
+        for (var i = 0; i < cpf.Length; i++)
         {
-            numbers[i] = (byte) random.Next(maxValue: 10);
+            cpf[i] = (byte)random.Next(10);
         }
-
-        var cpf = BitConverter.ToUInt64(numbers, startIndex: 0);
 
         var str = string.Join("", cpf);
 
-        if (str.AreAllCharsTheSame())
-        {
-            return Generate();
-        }
+        if (str.AreAllCharsTheSame()) { return Generate(); }
 
-        var digits = CalculateDigits(document: str);
+        var digits = CalculateDigits(str);
 
-        var result = $"{str}{digits}";
-
-        return result;
+        return $"{str}{digits}";
     }
 
     # endregion
