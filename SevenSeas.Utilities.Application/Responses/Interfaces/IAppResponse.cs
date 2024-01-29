@@ -6,7 +6,8 @@ namespace SevenSeas.Utilities.Application.Responses.Interfaces;
 /// Interface for the application response.
 /// </summary>
 /// <typeparam name="TData">The type of the data in the response.</typeparam>
-/// <typeparam name="TStatusCode">The type of the status code in the response.</typeparam>
+/// <typeparam name="TStatusCode">The type of the status code in the response.
+/// </typeparam>
 public interface IAppResponse<TData, TStatusCode>
 {
     /// <summary>
@@ -28,7 +29,7 @@ public interface IAppResponse<TData, TStatusCode>
     /// </summary>
 
     [JsonProperty("errors")]
-    IList<string>? Errors { get; init; }
+    List<string> Errors { get; init; }
 
     /// <summary>
     /// Gets the response data.
