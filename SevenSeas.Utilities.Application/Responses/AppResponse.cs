@@ -15,13 +15,13 @@ public class AppResponse : IAppResponse<object, AppStatusCode>
     public AppResponse(
         bool success,
         AppStatusCode appStatusCode,
-        Errors? errors = default,
+        Errors errors = default,
         object? data = default
     )
     {
         Success = success;
         AppStatusCode = appStatusCode;
-        Errors = errors ?? new List<string>();
+        Errors = errors;
         Data = data;
     }
 }

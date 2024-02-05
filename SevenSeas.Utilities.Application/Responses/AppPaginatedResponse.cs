@@ -25,7 +25,7 @@ public class AppPaginatedResponse :
         uint pageSize,
         uint page,
         uint totalRecords,
-        Errors? errors = default
+        Errors errors = default
     ) : base(
         success: true,
         appStatusCode: AppStatusCode.Success,
