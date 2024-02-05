@@ -21,7 +21,7 @@ public readonly struct Cpf :
 
     # endregion
 
-    # region ---- Fields ------------------------------------------------------
+    # region ---- Fields -------------------------------------------------------
 
     private readonly string _value;
 
@@ -134,7 +134,7 @@ public readonly struct Cpf :
 
         for (var i = 0; i < cpf.Length; i++)
         {
-            cpf[i] = (byte)random.Next(10);
+            cpf[i] = (byte)random.Next(maxValue: 10);
         }
 
         var str = string.Join("", cpf);
