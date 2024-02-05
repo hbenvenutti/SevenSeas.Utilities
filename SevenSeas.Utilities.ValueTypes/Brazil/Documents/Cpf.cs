@@ -1,7 +1,6 @@
 ﻿using SevenSeas.Utilities.Extensions.Extensions;
 using SevenSeas.Utilities.Extensions.Services;
 using SevenSeas.Utilities.ValueTypes.Exceptions;
-using SevenSeas.Utilities.ValueTypes.Interfaces;
 
 namespace SevenSeas.Utilities.ValueTypes.Brazil.Documents;
 
@@ -9,10 +8,10 @@ namespace SevenSeas.Utilities.ValueTypes.Brazil.Documents;
 /// Represents CPF number (Cadastro de Pessoas Física).
 /// </summary>
 
-public readonly struct Cpf :
-    IMaskedType,
-    IGenerator<Cpf>,
-    ISensitiveType
+public readonly ref struct Cpf
+    // IMaskedType,
+    // IGenerator<Cpf>,
+    // ISensitiveType
 {
     # region ---- Constants ----------------------------------------------------
 
@@ -31,13 +30,13 @@ public readonly struct Cpf :
 
     # region ---- Properties ---------------------------------------------------
 
-    ///<inheritdoc/>
+    ///<summary>Gets the CPF with mask.</summary>
     public string Mask => CpfRegex.Mask(_value);
 
-    /// <summary>Gets the digits of the CPF.</summary>
+    /// <summary>Gets the CPF validation digits.</summary>
     public string Digits => _value[9..];
 
-    ///<inheritdoc/>
+    ///<summary>Hides some digits of the CPF.</summary>
     public string SecurityMask => CpfRegex.SecurityMask(_value);
 
     # endregion
@@ -125,7 +124,9 @@ public readonly struct Cpf :
 
     # region ---- Generate -----------------------------------------------------
 
-    /// <inheritdoc />
+    /// <summary> Generates a new random Cpf.</summary>
+    /// <returns>A new random Cpf.</returns>
+    /// <remarks> This method is not thread safe. </remarks>
     public static Cpf Generate()
     {
         var random = new Random();
@@ -165,12 +166,8 @@ public readonly struct Cpf :
 
     public override string ToString() => _value;
 
-    public override bool Equals(object? obj)
+    public bool Equals(Cpf cpf)
     {
-        if (obj is null || obj.GetType() != GetType()) { return false; }
-
-        var cpf = (Cpf)obj;
-
         return Numeric == cpf.Numeric;
     }
 
