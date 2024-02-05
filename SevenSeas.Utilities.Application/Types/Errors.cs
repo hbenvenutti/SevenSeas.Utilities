@@ -6,7 +6,7 @@ public struct Errors
 {
     private readonly List<string> _values;
 
-    # region ---- constructor --------------------------------------------------
+    # region ---- Constructor --------------------------------------------------
 
     private Errors(IEnumerable<string> values)
     {
@@ -15,9 +15,9 @@ public struct Errors
 
     # endregion
 
-    # region ---- operators ----------------------------------------------------
+    # region ---- Operators ----------------------------------------------------
 
-    public static implicit operator Errors?(string message)
+    public static implicit operator Errors(string message)
     {
         return new Errors([message]);
     }
