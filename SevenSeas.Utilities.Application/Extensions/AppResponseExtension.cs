@@ -1,8 +1,8 @@
 ﻿using System.Net;
-using SevenSeas.Utilities.Application.Enums;
-using SevenSeas.Utilities.Application.Responses;
+using CodeRoom.Utilities.Application.Enums;
+using CodeRoom.Utilities.Application.Responses;
 
-namespace SevenSeas.Utilities.Application.Extensions;
+namespace CodeRoom.Utilities.Application.Extensions;
 
 public static class AppResponseExtension
 {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace SevenSeas.Utilities.Validation.Extensions;
+namespace CodeRoom.Utilities.DependencyInjection.Validation;
 
 public static class ServiceExtension
 {

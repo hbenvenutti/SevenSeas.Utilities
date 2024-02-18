@@ -1,8 +1,8 @@
-﻿using SevenSeas.Utilities.Application.Enums;
-using SevenSeas.Utilities.Application.Responses.Interfaces;
-using SevenSeas.Utilities.Application.Types;
+﻿using CodeRoom.Utilities.Application.Enums;
+using CodeRoom.Utilities.Application.Responses.Interfaces;
+using CodeRoom.Utilities.Application.Types;
 
-namespace SevenSeas.Utilities.Application.Responses;
+namespace CodeRoom.Utilities.Application.Responses;
 
 public class AppPaginatedResponse :
     AppResponse,

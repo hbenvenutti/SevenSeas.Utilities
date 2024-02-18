@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CodeRoom.Utilities.Application.Enums;
+using CodeRoom.Utilities.Application.Exceptions;
+using CodeRoom.Utilities.Application.Responses;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using SevenSeas.Utilities.Application.Enums;
-using SevenSeas.Utilities.Application.Exceptions;
-using SevenSeas.Utilities.Application.Responses;
 
 namespace SevenSeas.Utilities.Validation.ExceptionFilters;
 

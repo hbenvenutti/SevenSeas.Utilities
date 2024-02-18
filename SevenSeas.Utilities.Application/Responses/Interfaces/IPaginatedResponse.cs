@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace SevenSeas.Utilities.Application.Responses.Interfaces;
+namespace CodeRoom.Utilities.Application.Responses.Interfaces;
 
 /// <summary>
 /// Represents a paginated response.

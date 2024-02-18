@@ -4,13 +4,14 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.1.0</Version>
-        <Title>Seven Seas Utilities Validation</Title>
-        <PackageIcon>logo.png</PackageIcon>
+        <Version>0.0.1</Version>
+        <Title>Code Room: Utilities Dependency Injection</Title>
         <Authors>Huam Benvenutti</Authors>
+        <PackageIcon>logo.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <AssemblyName>CodeRoom.Utilities.DependencyInjection</AssemblyName>
+        <RootNamespace>CodeRoom.Utilities.DependencyInjection</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,7 +19,7 @@
     </ItemGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-        <DocumentationFile>bin\Release\SevenSeas.Utilities.Validation.xml</DocumentationFile>
+        <DocumentationFile>bin\Release\SevenSeas.Utilities.DependencyInjection.xml</DocumentationFile>
         <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
         <NoWarn>1701;1702;1591</NoWarn>
     </PropertyGroup>
@@ -34,12 +35,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SevenSeas.Utilities.Application\SevenSeas.Utilities.Application.csproj" />
-      <ProjectReference Include="..\SevenSeas.Utilities.ValueTypes\SevenSeas.Utilities.ValueTypes.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Extensions\" />
+      <ProjectReference Include="..\SevenSeas.Utilities.Validation\SevenSeas.Utilities.Validation.csproj" />
     </ItemGroup>
 
 </Project>

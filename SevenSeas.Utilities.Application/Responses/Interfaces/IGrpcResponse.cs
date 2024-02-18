@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using GrpcStatus = Grpc.Core.Status;
 
-namespace SevenSeas.Utilities.Application.Responses.Interfaces;
+namespace CodeRoom.Utilities.Application.Responses.Interfaces;
 
 /// <summary>
 /// Interface for a gRPC response.

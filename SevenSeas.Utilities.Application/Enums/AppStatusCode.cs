@@ -1,4 +1,4 @@
-﻿namespace SevenSeas.Utilities.Application.Enums;
+﻿namespace CodeRoom.Utilities.Application.Enums;
 
 public enum AppStatusCode
 {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 
-namespace SevenSeas.Utilities.Application.Types;
+namespace CodeRoom.Utilities.Application.Types;
 
 public struct Errors
 {

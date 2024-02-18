@@ -1,6 +1,6 @@
-﻿using SevenSeas.Utilities.Application.Enums;
+﻿using CodeRoom.Utilities.Application.Enums;
 
-namespace SevenSeas.Utilities.Application.Exceptions;
+namespace CodeRoom.Utilities.Application.Exceptions;
 
 /// <summary>
 /// Exception for the application.

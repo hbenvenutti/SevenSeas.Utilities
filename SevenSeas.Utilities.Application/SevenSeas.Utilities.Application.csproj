@@ -11,6 +11,8 @@
         <Authors>Huam Benvenutti</Authors>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <AssemblyName>CodeRoom.Utilities.Application</AssemblyName>
+        <RootNamespace>CodeRoom.Utilities.Application</RootNamespace>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">

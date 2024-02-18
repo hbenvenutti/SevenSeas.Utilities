@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace SevenSeas.Utilities.Application.Responses.Interfaces;
+namespace CodeRoom.Utilities.Application.Responses.Interfaces;
 
 /// <summary>
 /// Interface for the application response.
