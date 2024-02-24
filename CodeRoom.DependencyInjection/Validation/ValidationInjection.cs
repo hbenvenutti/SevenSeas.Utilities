@@ -4,9 +4,9 @@ using SevenSeas.Utilities.Validation.ExceptionFilters;
 
 namespace CodeRoom.Utilities.DependencyInjection.Validation;
 
-public static class ControllerExtension
+public static class ValidationInjection
 {
-    public static void AddSCodeRoomValidation(this MvcOptions options)
+    public static void AddCodeRoomValidation(this MvcOptions options)
     {
         options.Filters.Add(item: new ValidateModelAttribute());
         options.Filters.Add(item: new HttpApplicationExceptionFilter());
