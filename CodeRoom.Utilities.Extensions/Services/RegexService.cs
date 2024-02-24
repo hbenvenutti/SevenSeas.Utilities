@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace SevenSeas.Utilities.Extensions.Services;
+namespace CodeRoom.Utilities.Extensions.Services;
 
 public partial class RegexService
 {

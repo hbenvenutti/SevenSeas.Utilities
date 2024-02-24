@@ -1,4 +1,4 @@
-﻿namespace SevenSeas.Utilities.Extensions.Extensions;
+﻿namespace CodeRoom.Utilities.Extensions.Extensions;
 
 public static class CharExtension
 {
